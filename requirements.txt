@@ -8,5 +8,4 @@ plotly
 streamlit-lottie
 requests
 sounddevice
-time
-wave
+
