@@ -8,7 +8,6 @@ plotly
 streamlit-lottie
 requests
 sounddevice
-io
 os
 time
 wave
