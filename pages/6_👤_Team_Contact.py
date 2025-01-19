@@ -148,14 +148,14 @@ def team_contact_page():
     team_members = [
         {
             "name": "Ahmad Fakhar",
-            "role": "AI Developer",
+            "role": "Data Analyst",
             "github_url": "https://github.com/Ahmad-Fakhar",
             "linkedin_url": "https://www.linkedin.com/in/ahmad-fakhar-357742258/",
             "image_url": "https://github.com/Ahmad-Fakhar.png"
         },
         {
             "name": "Asim Khan",
-            "role": "AI Engineer",
+            "role": "ML Expert",
             "github_url": "https://github.com/Asimbaloch",
             "linkedin_url": "https://www.linkedin.com/in/asim-khan-baloch/",
             "image_url": "https://avatars.githubusercontent.com/u/85347127?v=4"
