@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+groq
+streamlit-option-menu
+pandas
+numpy
+plotly
+streamlit-lottie
+requests
+sounddevice
