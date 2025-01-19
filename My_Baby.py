@@ -13,7 +13,8 @@ st.set_page_config(
 def main():
     # Sidebar
     with st.sidebar:
-        st.image("https://github.com/devtayyabsajjad/My_Baby/blob/main/images/MY%20BABY.png", caption="My Baby")
+        # Use the raw URL of the image hosted on GitHub
+        st.image("https://raw.githubusercontent.com/devtayyabsajjad/My_Baby/main/images/MY%20BABY.png", caption="My Baby")
         st.markdown("---")
         selected = st.selectbox(
             "Navigate to",
