@@ -1,5 +1,4 @@
 import streamlit as st
-import sounddevice as sd
 import numpy as np
 import io
 import wave
@@ -8,37 +7,32 @@ from groq import Groq
 from gtts import gTTS
 import tempfile
 import time
+from pydub import AudioSegment
+from pydub.playback import play
 
 # Initialize Groq client
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def record_audio(duration=10):
-    """Record audio with visual feedback."""
+    """Simulate recording audio with a placeholder silent audio segment."""
     st.write("🎤 Listening...")
     
     # Create a progress bar for recording duration
     progress_bar = st.progress(0)
     
-    # Record audio with progress updates
-    sample_rate = 44100
-    audio_data = []
+    # Simulate recording by creating a silent audio segment
+    audio = AudioSegment.silent(duration=duration * 1000)  # Duration in milliseconds
     
+    # Update progress bar
     for i in range(duration):
-        chunk = sd.rec(int(sample_rate), samplerate=sample_rate, channels=1, dtype=np.float32)
-        sd.wait()
-        audio_data.append(chunk)
+        time.sleep(1)  # Simulate recording time
         progress_bar.progress((i + 1) / duration)
-        
-    audio_data = np.concatenate(audio_data)
+    
     progress_bar.empty()
     
     # Save to temporary WAV file
     temp_wav = tempfile.NamedTemporaryFile(delete=False, suffix='.wav')
-    with wave.open(temp_wav.name, 'wb') as wf:
-        wf.setnchannels(1)
-        wf.setsampwidth(2)
-        wf.setframerate(sample_rate)
-        wf.writeframes((audio_data * 32767).astype(np.int16).tobytes())
+    audio.export(temp_wav.name, format="wav")
     
     return temp_wav.name
 
