@@ -13,4 +13,3 @@ io
 os
 time
 wave
-pip
