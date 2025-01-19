@@ -7,5 +7,5 @@ numpy
 plotly
 streamlit-lottie
 requests
-sounddevice
+sounddevice==0.5.1
 
