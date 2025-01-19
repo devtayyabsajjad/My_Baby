@@ -8,3 +8,8 @@ plotly
 streamlit-lottie
 requests
 sounddevice
+tempfile
+io
+os
+time
+wave
