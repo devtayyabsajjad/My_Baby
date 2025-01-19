@@ -9,4 +9,5 @@ streamlit-lottie
 requests
 sounddevice==0.5.1
 pydub
+gtts
 
