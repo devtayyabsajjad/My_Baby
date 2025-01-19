@@ -13,7 +13,7 @@ st.set_page_config(
 def main():
     # Sidebar
     with st.sidebar:
-        st.image("https://placehold.co/600x200", caption="My Baby")
+        st.image("https://github.com/devtayyabsajjad/My_Baby/blob/main/images/MY%20BABY.png", caption="My Baby")
         st.markdown("---")
         selected = st.selectbox(
             "Navigate to",
