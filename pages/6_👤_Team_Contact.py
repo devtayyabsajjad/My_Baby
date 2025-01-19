@@ -154,11 +154,11 @@ def team_contact_page():
             "image_url": "https://github.com/Ahmad-Fakhar.png"
         },
         {
-            "name": "Muhammad Bilal",
+            "name": "Asim Khan",
             "role": "AI Engineer",
-            "github_url": "https://github.com/bilal7751",
-            "linkedin_url": "https://www.linkedin.com/in/muhammad-bilal-a75782280/",
-            "image_url": "https://avatars.githubusercontent.com/u/149602572?v=4"
+            "github_url": "https://github.com/Asimbaloch",
+            "linkedin_url": "https://www.linkedin.com/in/asim-khan-baloch/",
+            "image_url": "https://avatars.githubusercontent.com/u/85347127?v=4"
         },
         {
             "name": "Tayyab Sajjiad",
